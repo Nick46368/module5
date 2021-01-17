@@ -1,0 +1,5 @@
+eLearningCourse/
+*.docx
+*.pptx
+.idea/
+.nyc_output/

@@ -1,0 +1,46 @@
+{
+  "name": "mocha-unit-testing-example",
+  "version": "1.0.0",
+  "description": "a simple unit test using mocha",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-spies": "^1.0.0",
+    "eslint": "^7.17.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "nyc": "^15.1.0"
+  },
+  "scripts": {
+    "test": "mocha --config ./test/config/mocha.config.js",
+    "coverage": "nyc npm run test"
+  },
+  "nyc": {
+    "all": true,
+    "include": [
+      "app/**/*.js"
+    ],
+    "excludes": [
+      "**/*.spec.js"
+    ],
+    "reporter": [
+      "html",
+      "text"
+    ],
+    "check-coverage": true
+  },
+  "repository": {
+    "type": "git",
+    "url": "link"
+  },
+  "author": "Baal",
+  "license": "ISC",
+  "bugs": {
+    "url": "link"
+  },
+  "homepage": "yes"
+}
