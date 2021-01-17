@@ -24,7 +24,7 @@ describe('Calculator summarize', function() {
         expect(summarize.summ(333,333)).to.be.equal(666);
     });
 
-    // it('should throw an error if use some symbols', function() {
-    //      expect(summarize.summ(d, 4)).to.be.equal('Input value is not a Number! Enter valid data!');
-    // });
+    it('should return 84 when called with number 7,77', function() {
+        expect(summarize.summ(7,77)).to.be.equal(84);
+    });
 });

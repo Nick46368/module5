@@ -23,4 +23,8 @@ describe('Calculator multiply', function() {
     it('should return 110889 when called with number 333,333', function () {
         expect(multi.multiply(333, 333)).to.be.equal(110889);
     });
+
+    it('should return 539 when called with number 7,77', function() {
+        expect(multi.multiply(7,77)).to.be.equal(539);
+    });
 })

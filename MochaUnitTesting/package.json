@@ -31,7 +31,10 @@
       "html",
       "text"
     ],
-    "check-coverage": true
+    "check-coverage": true,
+    "branches": 20,
+    "lines": 20,
+    "statements": 20
   },
   "repository": {
     "type": "git",
