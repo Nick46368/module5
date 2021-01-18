@@ -24,7 +24,15 @@ describe('Calculator summarize', function() {
         expect(summarize.summ(333,333)).to.be.equal(666);
     });
 
-    it('should return 84 when called with number 7,77', function() {
-        expect(summarize.summ(7,77)).to.be.equal(84);
+    it('should return -11 when called with number -88,77', function() {
+        expect(summarize.summ(-88,77)).to.be.equal(-11);
+    });
+
+    it('should throw error if an array is passed as a parameter', () => {
+        try { summarize.summ([666, 333]) } catch (errorArrayNotANumber) { expect(errorArrayNotANumber).to.exist }
+    });
+
+    it('should throw an error when one of the parameters is not Number', () => {
+        try { summarize.summ('azz', 44) } catch (errorNotANumber) { expect(errorNotANumber).to.exist }
     });
 });
